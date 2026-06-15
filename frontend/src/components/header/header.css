@@ -61,3 +61,23 @@ header {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    display: revert;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile {
+    display: revert;
+  }
+}
