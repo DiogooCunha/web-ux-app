@@ -2,3 +2,7 @@ body {
     background-color: #010409;
     margin:0;
 }
+
+app-card{
+    padding:16px;
+}
