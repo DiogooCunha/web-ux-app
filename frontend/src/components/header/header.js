@@ -5,8 +5,6 @@ template.innerHTML = `
   <header>
     <div class="logo">Git Search</div>
 
-    <div class="menu-icon">☰</div>
-
     <div class="nav-right">
       <button class="icon-button github-btn" title="Git Hub">
         <svg viewBox="0 0 24 24" fill="currentColor">
@@ -49,6 +47,5 @@ class HeaderComponent extends HTMLElement {
   }
 }
 
-customElements.define('app-header', HeaderComponent);
 export { HeaderComponent };
 
