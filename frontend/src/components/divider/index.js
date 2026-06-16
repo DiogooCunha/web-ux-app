@@ -1,0 +1,1 @@
+export { DividerComponent as Divider } from './divider.js';

@@ -1,8 +1,28 @@
 body {
     background-color: #010409;
-    margin:0;
+    margin: 0;
 }
 
-app-card{
-    padding:16px;
+app-header {
+    padding-bottom: 16px;
+}
+
+app-card {
+    padding: 12px;
+}
+
+main {
+    padding: 16px;
+}
+
+main h2 {
+    font-family: 'Figtree', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #e6edf3;
+    margin: 0 0 10px;
+}
+
+main h2:not(:first-child) {
+    margin-top: 24px;
 }
