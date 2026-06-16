@@ -31,6 +31,7 @@ jobs:
           mkdir -p dist
           sed 's|\.\./src/|src/|g' frontend/public/index.html > dist/index.html
           cp frontend/public/login.html dist/login.html
+          cp frontend/public/pull-request.html dist/pull-request.html
           cp -r frontend/src dist/src
 
       - name: Upload artifact
