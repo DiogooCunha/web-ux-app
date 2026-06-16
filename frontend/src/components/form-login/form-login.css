@@ -2,6 +2,8 @@
   display: block;
   width: 100%;
   height: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 .login {
@@ -9,13 +11,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f3f3f3;
+  background: white;
   padding: 24px;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
-.login__content {
+.login-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,36 +24,36 @@
   gap: 12px;
 }
 
-.login__logo {
-  width: 132px;
-  height: 132px;
+.login-logo {
+  width: 135px;
+  height: 135px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.login__title {
+.login-title {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
   color: #9b9b9b;
 }
 
-.login__subtitle {
+.login-subtitle {
   margin: 0;
   font-size: 18px;
   font-weight: 700;
   color: #9b9b9b;
 }
 
-.login__text {
-  margin: 0 0 8px;
-  font-size: 16px;
-  font-weight: 700;
+.login-text {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 600;
   color: #9b9b9b;
 }
 
-.login__button {
+.login-button {
   border: 0;
   border-radius: 999px;
   background: #444b56;
@@ -62,13 +63,13 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
-.login__button-icon {
-  width: 18px;
-  height: 18px;
+.login-button-icon {
+  width: 22px;
+  height: 22px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -77,6 +78,12 @@
   flex-shrink: 0;
 }
 
-.login__button-text {
-  line-height: 1;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.login-button-text {
+  font-family: Arial, sans-serif;
+  line-height: 2;
 }

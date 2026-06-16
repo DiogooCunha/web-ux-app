@@ -1,1 +1,1 @@
-export { FormLoginComponent as FormLogin } from "./form-login";
+export { FormLoginComponent as FormLogin } from "./form-login.js";
