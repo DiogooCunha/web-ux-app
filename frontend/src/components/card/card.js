@@ -20,7 +20,7 @@ template.innerHTML = `
 
 class RepoCardComponent extends HTMLElement {
   static get observedAttributes() {
-    return ['repo-icon', 'repo-name', 'commit-message', 'commit-time', 'commit-avatars'];
+    return ['repo-icon', 'repo-name', 'commit-message', 'commit-time', 'commit-avatars', 'pr-state'];
   }
 
   constructor() {
@@ -34,6 +34,7 @@ class RepoCardComponent extends HTMLElement {
     this.shadowRoot.querySelector('.repo-name').textContent = this.getAttribute('repo-name') || '';
     this.shadowRoot.querySelector('.commit-msg').textContent = this.getAttribute('commit-message') || '';
     this.shadowRoot.querySelector('.timestamp').textContent = this.getAttribute('commit-time') || '';
+    this.shadowRoot.querySelector('.dot').dataset.state = this.getAttribute('pr-state') || 'open';
 
     const avatarsRaw = this.getAttribute('commit-avatars') || '';
     const container = this.shadowRoot.querySelector('.avatars');
@@ -53,16 +54,15 @@ class RepoCardComponent extends HTMLElement {
     if (name === 'repo-name') this.shadowRoot.querySelector('.repo-name').textContent = newValue || '';
     if (name === 'commit-message') this.shadowRoot.querySelector('.commit-msg').textContent = newValue || '';
     if (name === 'commit-time') this.shadowRoot.querySelector('.timestamp').textContent = newValue || '';
+    if (name === 'pr-state') this.shadowRoot.querySelector('.dot').dataset.state = newValue || 'open';
     if (name === 'commit-avatars') {
       const container = this.shadowRoot.querySelector('.avatars');
-      container.innerHTML = '';
-      (newValue || '').split(',').map(s => s.trim()).filter(Boolean).forEach(url => {
-        const img = document.createElement('img');
-        img.src = url;
-        img.alt = '';
-        img.className = 'avatar';
-        container.appendChild(img);
-      });
+      container.innerHTML = (newValue || '')
+        .split(',')
+        .map(s => s.trim())
+        .filter(Boolean)
+        .map(url => `<img src="${url}" alt="" class="avatar">`)
+        .join('');
     }
   }
 }

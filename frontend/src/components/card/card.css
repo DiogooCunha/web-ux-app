@@ -59,10 +59,13 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #3fb950;
   flex-shrink: 0;
   margin-top: 1px;
 }
+
+.dot[data-state="open"]   { background: #3fb950; }
+.dot[data-state="closed"] { background: #f85149; }
+.dot[data-state="merged"] { background: #a371f7; }
 
 .commit-msg {
   font-size: 13px;
