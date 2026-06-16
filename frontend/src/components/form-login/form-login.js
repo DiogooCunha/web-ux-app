@@ -27,7 +27,7 @@ template.innerHTML = `
           </svg>
         </span>
         <span class="login-button-text">
-          <a href="/frontend/public/index.html">Entrar com GitHub </a>
+          <a href="/web-ux-app/login.html">Entrar com GitHub </a>
         </span>
       </button>
     </div>
