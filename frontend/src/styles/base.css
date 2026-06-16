@@ -39,3 +39,7 @@ main h1 {
     color: #e6edf3;
     margin: 0 0 10px;
 }
+
+.section-link {
+    text-decoration: none;
+}
