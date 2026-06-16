@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+app-pr-stats {
+    background-color: #0D1117;
+    border-radius: 20px;
+}
+
 app-header {
     padding-bottom: 16px;
 }
