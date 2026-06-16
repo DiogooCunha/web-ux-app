@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+app-pr-stats {
+    background-color: #0D1117;
+    border-radius: 20px;
+}
+
 app-header {
     padding-bottom: 16px;
 }
@@ -27,6 +32,10 @@ main h2:not(:first-child) {
     margin-top: 24px;
 }
 
-.section-link {
-    text-decoration: none;
+main h1 {
+    font-family: 'Figtree', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #e6edf3;
+    margin: 0 0 10px;
 }
