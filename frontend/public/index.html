@@ -7,18 +7,35 @@
     <title>Componentes</title>
     <link rel="stylesheet" href="../src/styles/variables.css">
     <link rel="stylesheet" href="../src/styles/base.css">
-
     <script type="module" src="../src/index.js"></script>
 </head>
 
 <body>
     <app-header></app-header>
-    <app-card repo-icon="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
-        repo-name="DiogooCunha/Podcast" commit-message="chore: fixed the eslint configs" commit-time="3 days ago"
-        commit-avatars="https://avatars.githubusercontent.com/u/583231" pr-state="open"></app-card>
-    <app-card repo-icon="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
-        repo-name="DiogooCunha/Portfolio" commit-message="feat: add dark mode toggle" commit-time="1 day ago"
-        commit-avatars="https://avatars.githubusercontent.com/u/583231" pr-state="merged"></app-card>
+
+    <main>
+        <h2>Pull Requests</h2>
+        <app-card repo-icon="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
+            repo-name="DiogooCunha/Podcast" commit-message="chore: fixed the eslint configs" commit-time="3 days ago"
+            commit-avatars="https://avatars.githubusercontent.com/u/583231" pr-state="open"></app-card>
+        <app-card repo-icon="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
+            repo-name="DiogooCunha/Portfolio" commit-message="feat: add dark mode toggle" commit-time="1 day ago"
+            commit-avatars="https://avatars.githubusercontent.com/u/583231" pr-state="merged"></app-card>
+        <app-card repo-icon="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
+            repo-name="DiogooCunha/Portfolio" commit-message="feat: add dark mode toggle" commit-time="1 day ago"
+            commit-avatars="https://avatars.githubusercontent.com/u/583231" pr-state="closed"></app-card>
+        <app-divider label="+ 3"></app-divider>
+        <h2>Issues</h2>
+        <app-card repo-icon="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
+            repo-name="ArthurLoffi/CrudPython" commit-message="Test#1" commit-time="3 days ago"
+            commit-avatars="https://avatars.githubusercontent.com/u/583231" pr-state="closed"></app-card>
+        <app-divider></app-divider>
+        <h2>Repositories</h2>
+        <app-card repo-icon="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
+            repo-name="DiogooCunha/CrudPython" commit-message="fix: remove unused imports" commit-time="5 days ago"
+            commit-avatars="https://avatars.githubusercontent.com/u/583231" pr-state="open"></app-card>
+        <app-divider></app-divider>
+    </main>
 </body>
 
 </html>
