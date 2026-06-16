@@ -1,0 +1,1 @@
+export {PrStatsComponent as PrStats } from './pr-stats.js';

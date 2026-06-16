@@ -26,3 +26,11 @@ main h2 {
 main h2:not(:first-child) {
     margin-top: 24px;
 }
+
+main h1 {
+    font-family: 'Figtree', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #e6edf3;
+    margin: 0 0 10px;
+}
