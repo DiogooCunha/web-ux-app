@@ -21,7 +21,7 @@
 .label {
   font-size: 11px;
   color: #484f58;
-  white-space: nowrap;
+  white-space: nowrap ;
 }
 
 .label:empty {
