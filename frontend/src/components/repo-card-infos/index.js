@@ -1,0 +1,1 @@
+export { RepoCardInfosComponent as RepoInfo } from './repo-card-infos.js';
