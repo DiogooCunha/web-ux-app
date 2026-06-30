@@ -1,44 +1,32 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Repository</title>
-  <link rel="stylesheet" href="./src/styles/base.css" />
-  <script type="module" src="./src/index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repository</title>
+    <link rel="stylesheet" href="./src/styles/base.css" />
+    <script type="module" src="./src/index.js"></script>
 </head>
+
 <body>
-  <main>
     <app-header></app-header>
-    <h1>Repositories</h1>
-    <app-card
-      repo-icon="https://github.com/favicon.ico"
-      repo-name="meu-repo"
-      commit-message="feat: implementar jwt"
-      commit-time="1 day ago"
-      pr-state="open"
-      commit-avatars="https://i.pravatar.cc/32?u=1,https://i.pravatar.cc/32?u=2"
-    ></app-card>
+    <main>
+        <h1>Repositories</h1>
+        <app-card repo-icon="https://github.com/favicon.ico" repo-name="meu-repo" commit-message="feat: implementar jwt"
+            commit-time="1 day ago" pr-state="open"
+            commit-avatars="https://i.pravatar.cc/32?u=1,https://i.pravatar.cc/32?u=2"></app-card>
 
-    <app-card
-      repo-icon="https://github.com/favicon.ico"
-      repo-name="url-shortener-go"
-      commit-message="feat: implementar rate limit"
-      commit-time="22h ago"
-      pr-state="closed"
-      commit-avatars="https://i.pravatar.cc/32?u=1,https://i.pravatar.cc/32?u=2"
-    ></app-card>
+        <app-card repo-icon="https://github.com/favicon.ico" repo-name="url-shortener-go"
+            commit-message="feat: implementar rate limit" commit-time="22h ago" pr-state="closed"
+            commit-avatars="https://i.pravatar.cc/32?u=1,https://i.pravatar.cc/32?u=2"></app-card>
 
-    <app-divider></app-divider>
+        <app-divider></app-divider>
 
-    <app-card
-      repo-icon="https://github.com/favicon.ico"
-      repo-name="url-shortener-python"
-      commit-message="feat: implementar nano id"
-      commit-time="10h ago"
-      pr-state="merged"
-      commit-avatars="https://i.pravatar.cc/32?u=1,https://i.pravatar.cc/32?u=2"
-    ></app-card>
-  </main>
+        <app-card repo-icon="https://github.com/favicon.ico" repo-name="url-shortener-python"
+            commit-message="feat: implementar nano id" commit-time="10h ago" pr-state="merged"
+            commit-avatars="https://i.pravatar.cc/32?u=1,https://i.pravatar.cc/32?u=2"></app-card>
+    </main>
 </body>
+
 </html>
