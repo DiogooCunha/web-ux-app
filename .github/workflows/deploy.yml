@@ -33,6 +33,7 @@ jobs:
           cp frontend/public/login.html dist/login.html
           cp frontend/public/pull-request.html dist/pull-request.html
           cp frontend/public/issues.html dist/issues.html
+          cp frontend/public/repository.html dist/repository.html
           cp -r frontend/src dist/src
 
       - name: Upload artifact
