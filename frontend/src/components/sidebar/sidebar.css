@@ -56,3 +56,15 @@
   width: 20px;
   height: 20px ;
 }
+
+@media (min-width: 768px) {
+  .overlay,
+  .close-btn {
+    display: none;
+  }
+
+  .panel,
+  :host(.open) .panel {
+    transform: none;
+  }
+}
